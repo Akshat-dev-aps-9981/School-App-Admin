@@ -1,0 +1,83 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+   	 android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:orientation="vertical">
+	
+		<LinearLayout
+			android:layout_width="match_parent"
+   		 android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			
+			<de.hdodenhof.circleimageview.CircleImageView
+    			android:id="@+id/deleteNoticeProfile"
+    			android:layout_width="36dp"
+ 		 	  android:layout_height="36dp"
+		  	  android:src="@drawable/profile"
+				android:layout_gravity="center"
+  			  app:civ_border_width="2dp"
+ 			   app:civ_border_color="#FF000000"/>
+				
+			<TextView
+				android:id="@+id/deleteNoticeSender"
+				android:layout_width="match_parent"
+   		 	android:layout_height="wrap_content"
+				android:text="Admin SVM app"
+				android:layout_marginLeft="16dp"
+				android:textSize="18sp"
+				android:textColor="@color/textColor"/>
+				
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/deleteNoticeBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Delete"
+				android:textAllCaps="false"
+				android:layout_marginLeft="-100dp"
+				style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+	
+		</LinearLayout>
+	
+		<TextView
+			android:id="@+id/deleteNoticeTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Notice Heading."
+			android:textSize="17sp"
+			android:textColor="@color/textColor"/>
+		<androidx.cardview.widget.CardView
+			android:id="@+id/imagecard"
+			android:layout_width="match_parent"
+			android:layout_height="400dp"
+			android:visibility="gone"
+			android:layout_marginTop="16dp">
+		<ImageView
+			android:id="@+id/deleteNoticeImage"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:visibility="invisible"
+			android:scaleType="centerInside"/>
+		</androidx.cardview.widget.CardView>
+		
+		<android.view.View
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:layout_marginVertical="8dp"
+			android:background="@color/pink"/>
+			
+	</LinearLayout>
+	
+	<android.view.View
+	android:layout_width="match_parent"
+	android:layout_height="2dp"
+	android:layout_marginVertical="8dp"
+	android:background="@color/red2"/>
+	
+</androidx.cardview.widget.CardView>

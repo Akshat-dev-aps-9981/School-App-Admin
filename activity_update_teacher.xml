@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="center"
+	android:padding="16dp"
+    android:orientation="vertical">
+	
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:id="@+id/updateTeacherImage"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="150dp"
+    	android:layout_height="150dp"
+		android:src="@drawable/profile"
+		android:layout_marginTop="36dp"/>
+		
+	<com.google.android.material.textfield.TextInputLayout
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp">
+			
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/updateTeacherName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Type the teacher's name here."
+				android:inputType="textCapWords|textPersonName"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:padding="5dp"
+				android:layout_marginTop="10dp"
+				android:textColor="@color/textColor"/>
+			
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<com.google.android.material.textfield.TextInputLayout
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp">
+			
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/updateTeacherEmail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Type the teacher's email address here."
+				android:inputType="textEmailAddress"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:padding="5dp"
+				android:layout_marginTop="10dp"
+				android:textColor="@color/textColor"/>
+			
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+		style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp">
+		
+		<com.google.android.material.textfield.TextInputEditText
+		android:id="@+id/updateTeacherPhoneNumber"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Type the teacher's phone number here."
+		android:inputType="phone"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:padding="5dp"
+		android:layout_marginTop="10dp"
+		android:textColor="@color/textColor"/>
+		
+		</com.google.android.material.textfield.TextInputLayout>
+		
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:weightSum="2"
+			android:layout_marginTop="24dp"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<Button
+				android:id="@+id/updateTeacherBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Update Teacher."
+				android:textStyle="bold"
+				android:gravity="center"
+				android:layout_weight="1"
+				android:padding="5dp"
+				android:textAllCaps="false"
+				android:layout_marginRight="8dp"
+				android:textColor="@color/textColor"/>
+		
+			<Button
+				android:id="@+id/deleteTeacherBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Delete Teacher."
+				android:textStyle="bold"
+				android:layout_weight="1"
+				android:textAllCaps="false"
+				android:gravity="center"
+				android:padding="5dp"
+				android:layout_marginLeft="8dp"
+				android:textColor="@color/textColor"/>
+		
+		</LinearLayout>
+
+</LinearLayout>
