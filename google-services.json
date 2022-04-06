@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69748585463",
+    "project_id": "svm-agar-e6379",
+    "storage_bucket": "svm-agar-e6379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69748585463:android:856527a5be7e9d7ab934f2",
+        "android_client_info": {
+          "package_name": "com.aksapps.svmadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69748585463-qc7uu7g6pfhg6getu42eh2qhi4hkd83n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh682MoaJEAY8Ty8p1ZkNFbPIsWL-N4Vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69748585463-qc7uu7g6pfhg6getu42eh2qhi4hkd83n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
